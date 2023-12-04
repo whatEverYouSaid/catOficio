@@ -47,6 +47,14 @@
         Set(value As Oficio)
         End Set
     End Property
+    
+    Private Property estado As Boolean
+        Get
+            Return Nothing
+        End Get
+        Set(value As Boolean)
+        End Set
+    End Property
 
     Public Sub verOfertas()
 
@@ -63,4 +71,12 @@
     Public Sub transferirDinero()
 
     End Sub
+    
+    Public Function verListaServicios() as Servicio()
+        
+    End Function
+    
+    Public Function verListaAnunciosPorIdServicio(idServicio As Integer) As Anuncio()
+        
+    End Function
 End Class
